@@ -30,16 +30,19 @@ export const sliderItems = [
       // img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       img:"https://images.unsplash.com/photo-1534126416832-a88fdf2911c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
       title: "CROP TOP!",
+      cat: 'women'
     },
     {
       id: 2,
       img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "LOUNGEWEAR LOVE",
+      cat: 'coat'
     },
     {
       id: 3,
       img:"https://images.pexels.com/photos/11007543/pexels-photo-11007543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "JACKETS",
+      cat: "jacket"
     },
   ];
 

@@ -1,12 +1,10 @@
-import React from 'react'
-import styled from 'styled-components';
 import {
-    FavoriteBorderOutlined,
-    SearchOutlined,
-    ShoppingCartOutlined,
-  } from "@material-ui/icons";
+  FavoriteBorderOutlined,
+  SearchOutlined,
+  ShoppingCartOutlined,
+} from "@material-ui/icons";
+import styled from "styled-components";
 
-//   info--search..cart--gav
 const Info = styled.div`
   opacity: 0;
   width: 100%;
@@ -23,10 +21,8 @@ const Info = styled.div`
   cursor: pointer;
 `;
 
-// hover...component..info..so info is defined above
 const Container = styled.div`
   flex: 1;
-  
   margin: 5px;
   min-width: 280px;
   height: 350px;
@@ -35,7 +31,6 @@ const Container = styled.div`
   justify-content: center;
   background-color: #f5fbfd;
   position: relative;
-
   &:hover ${Info}{
     opacity: 1;
   }
@@ -50,13 +45,10 @@ const Circle = styled.div`
 `;
 
 const Image = styled.img`
-
-
   height: 75%;
   z-index: 2;
 `;
 
-// /transform::after hover...bigger..and animated..transition
 const Icon = styled.div`
   width: 40px;
   height: 40px;
@@ -67,7 +59,6 @@ const Icon = styled.div`
   justify-content: center;
   margin: 10px;
   transition: all 0.5s ease;
-
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
@@ -75,7 +66,6 @@ const Icon = styled.div`
 `;
 
 const Product = ({ item }) => {
-    // First backgroun containe...second ..baground circle
   return (
     <Container>
       <Circle />
