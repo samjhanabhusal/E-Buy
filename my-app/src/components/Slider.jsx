@@ -100,6 +100,8 @@ const Slider = () => {
     <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlined />
       </Arrow>
+     
+     
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
@@ -121,4 +123,6 @@ const Slider = () => {
   )
 }
 
-export default Slider
+export default Slider;
+
+

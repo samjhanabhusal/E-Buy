@@ -13,7 +13,7 @@ import {
   const Container = styled.div`
     display: flex;
     background-color: teal;
-    ${mobile({ flexDirection: "column" })}
+    
   `;
   
   const Left = styled.div`

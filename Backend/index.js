@@ -4,6 +4,7 @@ const express = require('express')
 
 const app = express()
 
+
 const mongoose = require('mongoose')
 const dotenv = require('dotenv');
 const userRoute = require('./routes/user')
@@ -11,7 +12,7 @@ const authRoute = require('./routes/auth')
 const productRoute = require('./routes/product')
 const cartRoute = require('./routes/cart')
 const orderRoute = require('./routes/order')
-
+const cors = require('cors');
 
 dotenv.config({
     path: './.env'
@@ -28,7 +29,8 @@ mongoose
     console.log(err)
 });
 
-
+// CORS --cross origin resource sharing
+app.use(cors())
 //TO take json object
 // Built in level middleware
 app.use(express.json());//can pass json object

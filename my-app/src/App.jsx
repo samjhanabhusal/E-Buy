@@ -9,12 +9,12 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect
 
 } from "react-router-dom";
 
-
-
 const App = () => {
+  const user = true;
   
  
   return (
@@ -31,17 +31,12 @@ const App = () => {
         </Route>
         <Route path="/cart">
           <Cart />
-        </Route>
-        <Route path="/products">
-          <ProductList/>
-        </Route>
-        
-        
+        </Route>      
         <Route path="/login">
-        <Login></Login>
+        {user?<Redirect to = "/"/>: <Login/>}
         </Route>
         <Route path="/register">
-          <Register />
+          {user? <Redirect to = "/"/> : <Register/>}
         </Route>
       </Switch>
     </Router>

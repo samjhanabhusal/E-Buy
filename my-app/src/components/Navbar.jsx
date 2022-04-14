@@ -6,8 +6,7 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
-  @media only screen and (max-width: 380px)
-  {display:none;}
+  
 `;
 
 const Wrapper = styled.div`
