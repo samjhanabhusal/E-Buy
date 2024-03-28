@@ -1,0 +1,1 @@
+Designed an ecommerce website specializing in a wide range of products and services. The website featured user-friendly navigation, and an extensive product catalog, providing customers with an exceptional shopping experience.
